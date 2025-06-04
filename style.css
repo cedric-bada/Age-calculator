@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100svh;
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  justify-items: center;
+  align-content: center;
+  width: 90%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+label {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+input[type="number"] {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: 1px solid #000;
+}
+button {
+  border: none;
+  background-color: royalblue;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 0.75em 1.5em;
+}
