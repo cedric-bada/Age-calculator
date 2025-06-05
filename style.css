@@ -1,22 +1,24 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100svh;
-  display: grid;
-  place-items: center;
+  height: 100vh; /* fallback */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper,
+.container {
+  display: flex;
+  flex-direction: column;
 }
 .wrapper {
-  justify-items: center;
-  align-content: center;
-  width: 90%;
-  max-width: 420px;
-  margin: 0 auto;
+  border: 1px solid;
+  justify-content: center;
+  align-items: center;
 }
 .container {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   gap: 1rem;
 }
 label {

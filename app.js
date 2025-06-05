@@ -46,5 +46,5 @@ function calculateAge(birthDateStr, targetDateStr) {
     months = months + 12;
   }
 
-  return `Your age is ${years}years, ${months} months, ${days}days.`;
+  return `Your age is ${years} years, ${months} months, ${days}days.`;
 }
