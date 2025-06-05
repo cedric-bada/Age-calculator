@@ -12,15 +12,13 @@ const [year, month, day] = [
   today.getMonth() + 1,
   today.getDate(),
 ];
-let targetDateStr = `${year}-${month}-${day}`;
+let targetDateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
 btn.addEventListener("click", () => {
   const userYear = inputYear.value;
   const userMonth = inputMonth.value;
   const userDay = inputDay.value;
-  const birthDateStr = `${userYear}-${userMonth}-${userDay}`;
-
-  console.log(birthDateStr, targetDateStr);
+  const birthDateStr = `${userYear}-${String(userMonth).padStart(2, '0')}-${String(userDay).padStart(2, '0')}`; // valid input format YYYY-MM-DD
   age.textContent = calculateAge(birthDateStr, targetDateStr);
 });
 
